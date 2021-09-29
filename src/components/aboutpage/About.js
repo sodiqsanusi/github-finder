@@ -6,14 +6,15 @@ const About = () => {
 
             <h2>About GitHub Find</h2>
             <article className="about--article">
-             <p>This web application was created for checking profiles on GitHub with ease
-                 without having to login into GitHub itself.
+             <p>This web application was created for checking profiles on GitHub
+                 without having to login into GitHub itself. <br/>
+                 To begin, go to the homepage and type in a GitHub username.
              </p>
             </article>
               
             <h2>Who built this site?</h2>
             <article className="about--article">
-                <p>This site was created by a beginner front-end web developer(emphasis on beginner) as his
+                <p>This site was created by a beginner front-end developer(emphasis on beginner) as his
                  project with React.js. <br/>
                    You can check him up on any social media platform, Sodiq Sanusi.
                 </p>

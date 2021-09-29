@@ -1,16 +1,18 @@
 import octocatGif from '../../assets/octocat-gif.gif';
 import {useState} from 'react';
-
+import { useHistory} from 'react-router-dom';
 
 
 const HomePage = () => {
   const [username, setUsername] = useState("");
+  const history = useHistory();
   
   
 
 
   const handleSubmit= (e) => {
     e.preventDefault();
+    history.push(`/${username}`)
   }
 
 
