@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Quicksand:wght@300;400&display=swap');
+
+
+/*----------------------
+ GENEARL STYLING AND RESET
+ ----------------------- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img{
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  background-color: #fff;
+  background-image: url("./assets/backgroundImg.png");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*----------------------
+ NAVIGATION BAR STYLING
+ -----------------------*/
+
+#navbar{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #24292F;
+  color: #fff;
+  padding:  1.5em 1em;
+  font-weight: 300;
+}
+
+.navbar--brand{
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .05em;
+  font-size: 1.5rem;
+  text-shadow: 1px 2px #878a00;
+}
+
+
+.navbar--list{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.navbar--list a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  margin: 0 .5em;
+}
+.navbar--list a:hover,
+.navbar--list a:focus{
+  color: #878a00;
+  text-decoration: underline;
+}
+
+/*----------
+ HOMEPAGE
+ ----------- */
+
+ #homepage{
+   text-align: center;
+   padding: 1em;
+   overflow: hidden;
+   max-width: 540px;
+   margin: 0 auto;
+ }
+ .illustration{
+   font-size: 1.5rem;
+   margin-bottom: 1em;
+   animation: illustration-in 1s linear forwards;
+ }
+ @keyframes illustration-in {
+   0%{
+     position: relative;
+     right: 40%;
+     opacity: 0.4;
+   }
+
+   100%{
+     position: relative;
+     right: 0;
+     opacity: 1;
+   }
+ }
+
+label, input{
+  display: block;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.search-input{
+  background-color: transparent;
+  height: 2rem;
+  border-bottom: solid 2px #24292F;
+  margin-bottom: .5em;
+  font-size: 1.5rem;
+  color: #000;
+}
+.search-input:focus,
+.search-input:hover{
+  background-color: transparent;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+.input-search-button{
+  background-color: #878a00;
+  padding: .5em 1em;
+  font-size: 1.2rem;
+  border-radius: 8px 0 8px 0;
+}
+.input-search-button:focus,
+.input-search-button:hover{
+  background-color: #24292F;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mascot-gif{
+  margin: 4em auto 0;
+  width: 70%;
 }
