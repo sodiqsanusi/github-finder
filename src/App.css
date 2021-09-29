@@ -126,3 +126,55 @@ label, input{
   margin: 4em auto 0;
   width: 70%;
 }
+
+/*--------------
+ ABOUT PAGE
+ -------------- */
+
+ #about{
+   padding: 1em;
+   text-align: center;
+   max-width: 540px;
+   margin: 0 auto;
+ }
+
+ #about h2{
+   font-size: 2rem;
+   margin-bottom: .5em;
+   font-weight: 500;
+ }
+
+ .about--article{
+   border-radius: 10px 0 10px 0;
+   text-align: left;
+   position: relative;
+   font-size: 1.2rem;
+   letter-spacing: .05em;
+   line-height: 1.5;
+   padding: 1em .5em;
+   background-color: #24292F;
+   color: #fff;
+   margin-bottom: .5em;
+ }
+ .about--article:nth-child(2){
+  border-radius: 0 10px 0 10px;
+ }
+
+ #about ul{
+   padding: 1em 4em;
+   display: flex;
+   list-style: none;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ #about svg{
+  width: 2rem;
+  height: 2rem;
+  color: #000;
+ }
+ #about  svg:focus,
+ #about svg:hover{
+   color: #878a00;
+   filter: drop-shadow(1px 2px #000);
+ }

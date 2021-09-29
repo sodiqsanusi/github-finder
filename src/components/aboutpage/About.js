@@ -1,3 +1,5 @@
+import {FaRegEnvelope, FaPhone, FaFacebookF } from 'react-icons/fa' ;
+
 const About = () => {
     return ( 
         <main id="about">
@@ -11,10 +13,17 @@ const About = () => {
               
             <h2>Who built this site?</h2>
             <article className="about--article">
-                <p>This web application was created by a beginner front-end web developer, he doesn't consider himself as an intermediate yet. <br/>
+                <p>This site was created by a beginner front-end web developer(emphasis on beginner) as his
+                 project with React.js. <br/>
                    You can check him up on any social media platform, Sodiq Sanusi.
                 </p>
             </article>
+
+            <ul>
+              <li><a href="mailto:ademilddiq@gmail.com"><FaRegEnvelope value={{size: "5rem"}}/> </a></li>
+              <li><a href="tel:+2347015108706"> <FaPhone /></a></li>
+              <li><a href="https://www.facebook.com/sodiqsanusi0" target="_blank" rel="noreferrer"><FaFacebookF /></a></li>
+            </ul>
         </main>
      );
 }
