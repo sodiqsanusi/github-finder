@@ -20,6 +20,10 @@ body{
   background-color: #fff;
   background-image: url("./assets/backgroundImg.png");
 }
+a:focus,
+a:hover{
+  text-decoration: underline;
+}
 
 /*----------------------
  NAVIGATION BAR STYLING
@@ -192,6 +196,7 @@ label, input{
        position: relative;
        margin: 25% auto;
        display: flex;
+       max-width: 200px;
        justify-content: space-between;
        align-items: center;
        width: 30%;
@@ -218,3 +223,101 @@ label, input{
         margin-top: 2em;
       }
     }
+
+    /*---------------
+     MAIN USER PAGE
+     ---------------- */
+
+    #main-user{
+      max-width: 540px;
+      margin: 0 auto;
+    }
+    .mainuser--intro,
+    .mainuser--summary{
+      margin: 1em .5em;
+      padding: 1em;
+      text-align: center;
+      border: .7px solid #878a00;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    } 
+    .user-img{
+      width: 30%;
+      margin: 0 auto;
+    }
+    .user-img img{
+      border-radius: 50%;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .mainuser--name{
+      font-size: 2rem;
+      text-shadow: 1px 2px rgba(0, 0, 0, 0.2) ;
+    }
+    .mainuser--location{
+      font-size: 1.3rem;
+    }
+
+    .mainuser--intro h4,
+    .mainuser--summary h4{
+      font-size: 1.5rem;
+      margin-bottom: .3em;
+      text-decoration: overline .5px #878a00;
+    }
+    .mainuser--intro h4{
+      margin-top: 1em;
+    }
+    .bio{
+     font-size: 1rem;
+     letter-spacing: .07em;
+     line-height: 1.5;
+    }
+
+    .mainuser--intro button,
+    .final-button button{
+      font-size: 1rem;
+      width: 100%;
+      margin: .5em 0;
+      border-radius: 6px;
+      border: none;
+      background-color: #878a00;
+      padding: .5em 2em;
+      font-weight: 500;
+    }
+
+    .mainuser--intro  a,
+    .final-button{
+      color: black;
+    }
+    .mainuser--intro  a button:hover,
+    .mainuser--intro a button:focus,
+    .final-button button:hover,
+    .final-button button:hover{
+      color: white;
+      background-color: #24292F;
+    }
+    .final-button{
+      margin: 0 25%;
+    }
+    .final-button button{
+      width: 50%;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .github-username{
+      font-size: 1rem;
+    }
+
+    .details--definer{
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+  
+    /*===============
+     ERROR PAGE
+     ================ */
+
+     #error-page{
+       max-width: 540px;
+       margin: .5em auto;
+     }
