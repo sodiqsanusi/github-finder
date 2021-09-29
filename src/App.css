@@ -54,7 +54,6 @@ a:-webkit-any-link {
 .navbar--list{
   display: flex;
   justify-content: space-between;
-  list-style: armenian;
 }
 .navbar--list a{
   text-decoration: none;
