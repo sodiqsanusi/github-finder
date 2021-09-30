@@ -54,6 +54,7 @@ a:-webkit-any-link {
 .navbar--list{
   display: flex;
   justify-content: space-between;
+  list-style: none;
 }
 .navbar--list a{
   text-decoration: none;
