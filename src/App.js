@@ -11,7 +11,7 @@ function App() {
       <main className="App">
         <Navbar />
         <Switch>
-          <Route exact path="/github-finder">
+          <Route exact path="/">
             <HomePage />
           </Route>
           <Route exact path="/about">
