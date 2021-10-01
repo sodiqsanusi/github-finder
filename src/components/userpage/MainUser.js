@@ -41,7 +41,7 @@ const MainUser = ( {data} ) => {
             </p>
         </article>
 
-        <Link to="/github-finder" className="final-button"><button>Back to homepage</button> </Link>
+        <Link to="/" className="final-button"><button>Back to homepage</button> </Link>
      
     </section>
   ) ;
