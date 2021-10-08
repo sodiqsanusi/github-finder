@@ -133,6 +133,7 @@ label, input{
 .ad{
   padding: .5em 0;
   font-size: 1.5rem;
+  text-align: center;
 }
 .ad button{
   border: none;
@@ -142,7 +143,10 @@ label, input{
   color: #fff;
   padding: .5em;
 }
-
+.ad button:focus,
+.ad button:hover{
+  background-color: #553b61;
+}
 .mascot-gif{
   margin: 4em auto 0;
   width: 70%;
@@ -243,7 +247,7 @@ label, input{
 
     #main-user{
       max-width: 540px;
-      margin: 0 auto;
+      margin: 0 auto 1rem;
     }
     .mainuser--intro,
     .mainuser--summary{
