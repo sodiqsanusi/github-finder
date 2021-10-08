@@ -40,7 +40,8 @@ const MainUser = ( {data} ) => {
             {data.public_repos} public {(data.public_repos === 1)? "repository" : "repositories"} {(data.public_repos === 1)? "has" : "have"} also been created by @{data.login} since joining Github on the date {newData}.
             </p>
         </article>
-
+           
+        <h4 className="ad">Built by <a href="https://github.com/sodiqsanusi"><button>Sodiq Sanusi</button></a></h4>  
         <Link to="/" className="final-button"><button>Back to homepage</button> </Link>
      
     </section>
