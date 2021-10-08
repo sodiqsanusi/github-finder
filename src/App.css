@@ -130,6 +130,19 @@ label, input{
   color: white;
 }
 
+.ad{
+  padding: .5em 0;
+  font-size: 1.5rem;
+}
+.ad button{
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  background-color: #a3d;
+  color: #fff;
+  padding: .5em;
+}
+
 .mascot-gif{
   margin: 4em auto 0;
   width: 70%;

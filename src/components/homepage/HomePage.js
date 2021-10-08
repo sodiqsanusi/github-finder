@@ -34,6 +34,7 @@ const HomePage = () => {
              />
             <input type="submit" value="Search" className="input-search-button"/>
           </form>
+          <h4 className="ad">Built by <a href="https://github.com/sodiqsanusi"><button>Sodiq Sanusi</button></a></h4>
           <div className="mascot-gif">
               <img src={octocatGif} alt="GitHub mascot 'Octocat' is  waving at you."/>
           </div>
