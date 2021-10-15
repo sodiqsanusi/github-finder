@@ -28,7 +28,7 @@ const HomePage = () => {
             <input
              type="search" placeholder="Search Username"
              required
-             autoComplete = 'false'
+             autoComplete = 'off'
              name="usernameInput" className="search-input"
              value ={username}
              onChange = {(e) => {setUsername(e.target.value)}}
